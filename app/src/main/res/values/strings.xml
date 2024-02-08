@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">project</string>
+    <string name="decrement">—</string>
+    <string name="item_pic">Item pic</string>
+    <string name="item_name">item name</string>
+    <string name="price">price</string>
+</resources>
