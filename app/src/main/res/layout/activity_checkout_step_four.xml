@@ -34,7 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
-        app:lottie_rawRes="@raw/confirm"></com.airbnb.lottie.LottieAnimationView>
+        app:lottie_rawRes="@raw/confirm" />
 
     <TextView
         android:id="@+id/confirm_txt1"

@@ -45,12 +45,12 @@ public class CheckoutStepOne extends AppCompatActivity {
 
 
         Setpview
-                .setStepViewTexts(stepsBeanList)//总步骤
-                .setTextSize(12)//set textSize
-                .setStepsViewIndicatorCompletedLineColor(ContextCompat.getColor(CheckoutStepOne.this, android.R.color.white))
+                .setStepViewTexts(stepsBeanList)
+                .setTextSize(12)
+                .setStepsViewIndicatorCompletedLineColor(ContextCompat.getColor(CheckoutStepOne.this, R.color.brown))
                 .setStepsViewIndicatorUnCompletedLineColor(ContextCompat.getColor(CheckoutStepOne.this, R.color.brown))
-                .setStepViewComplectedTextColor(ContextCompat.getColor(CheckoutStepOne.this, android.R.color.white))
-                .setStepViewUnComplectedTextColor(ContextCompat.getColor(CheckoutStepOne.this, R.color.white))
+                .setStepViewComplectedTextColor(ContextCompat.getColor(CheckoutStepOne.this, R.color.brown))
+                .setStepViewUnComplectedTextColor(ContextCompat.getColor(CheckoutStepOne.this, R.color.brown))
                 .setStepsViewIndicatorCompleteIcon(ContextCompat.getDrawable(CheckoutStepOne.this, R.drawable.baseline_done_24))
                 .setStepsViewIndicatorDefaultIcon(ContextCompat.getDrawable(CheckoutStepOne.this, R.drawable.baseline_panorama_fish_eye_24))
                 .setStepsViewIndicatorAttentionIcon(ContextCompat.getDrawable(CheckoutStepOne.this, R.drawable.baseline_error_outline_24));

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    ArrayList<ModelCart> cartmodels = new ArrayList<>();
+//    ArrayList<ModelCart> cartmodels = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         RecyclerView cart_view = findViewById(R.id.cart_view);
     }
-    private void setUpcartModels(){
-
-    }
+//    private void setUpcartModels(){
+//
+//    }
 }

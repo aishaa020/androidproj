@@ -24,9 +24,7 @@
         <activity
             android:name=".CheckoutStepOne"
             android:exported="false" />
-        <activity
-            android:name=".cart"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
