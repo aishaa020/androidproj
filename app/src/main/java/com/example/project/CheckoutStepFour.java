@@ -1,10 +1,10 @@
 package com.example.project;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -57,7 +57,7 @@ public class CheckoutStepFour extends AppCompatActivity {
         confirm_txt2 = findViewById(R.id.confirm_txt2);
         done_btn = findViewById(R.id.done_btn);
 
-        lottie1.animate().translationX(2000).setDuration(2000).setStartDelay(2900);
+        lottie1.animate().translationX(0).setDuration(2000).setStartDelay(2900);
 
         done_btn.setOnClickListener(new View.OnClickListener() {
             @Override

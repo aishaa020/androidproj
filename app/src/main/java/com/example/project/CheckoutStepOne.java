@@ -3,9 +3,10 @@ package com.example.project;
 import static android.app.PendingIntent.getActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -13,8 +14,6 @@ import android.widget.TextView;
 import com.baoyachi.stepview.HorizontalStepView;
 import com.baoyachi.stepview.VerticalStepView;
 import com.baoyachi.stepview.bean.StepBean;
-import com.example.project.databinding.ActivityMainBinding;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,7 +60,13 @@ public class CheckoutStepOne extends AppCompatActivity {
         tel_txt = findViewById(R.id.tel_txt);
         ch_phone = findViewById(R.id.ch_phone);
         ch_btn1 = findViewById(R.id.ch_btn1);
-
+        ch_btn1.setOnClickListener(v -> {
+            // Handle button click event
+            Intent i = new Intent(getApplicationContext(), CheckoutStepTwo.class);
+            startActivity(i);
+            // Stop Lottie animation
+        });
 
     }
+
 }

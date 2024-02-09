@@ -4,4 +4,7 @@
     <string name="item_pic">Item pic</string>
     <string name="item_name">item name</string>
     <string name="price">price</string>
+    <string name="next">Next</string>
+    <string name="Catg">Categories</string>
+
 </resources>

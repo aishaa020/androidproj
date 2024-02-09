@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'com.example.project'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.project"
@@ -22,9 +22,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    viewBinding{
-        enabled = true
-    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -36,12 +33,20 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.11.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    implementation 'com.github.DingMouRen:LayoutManagerGroup:1e6f4f96eb'
+
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'com.github.travijuu:numberpicker:1.0.7'
     implementation 'com.github.acefalobi:android-stepper:0.3.0'
-    implementation 'com.anton46:stepview:0.0.2'
     implementation 'com.github.baoyachi:StepView:1.9'
-    implementation "com.airbnb.android:lottie:3.4.0"
+    implementation 'com.airbnb.android:lottie:3.4.0'
+    implementation 'com.etebarian:meow-bottom-navigation:1.2.0'
+
+
+
+
 }

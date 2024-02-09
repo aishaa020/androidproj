@@ -37,13 +37,13 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginEnd="79dp"
                 android:padding="5dp"
-                android:src="@tools:sample/avatars"
+
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/linlayout"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:srcCompat="@tools:sample/avatars"
+
                 android:contentDescription="@string/item_pic" />
 
             <TextView
@@ -130,7 +130,7 @@
                     android:id="@+id/itemdel"
                     android:layout_width="45dp"
                     android:layout_height="match_parent"
-                    android:src="@tools:sample/avatars"
+
                     tools:srcCompat="@drawable/baseline_delete_24"
                     android:contentDescription="deleting"/>
 

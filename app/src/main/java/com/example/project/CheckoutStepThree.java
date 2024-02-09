@@ -1,17 +1,15 @@
 package com.example.project;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.baoyachi.stepview.HorizontalStepView;
 import com.baoyachi.stepview.bean.StepBean;
-
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,7 +26,7 @@ public class CheckoutStepThree extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkout_step_three);
 
-        HorizontalStepView Setpview = (HorizontalStepView) findViewById(R.id.step_view2);
+        HorizontalStepView setpView =  findViewById(R.id.step_view2);
 
         List<StepBean> stepsBeanList = new ArrayList<>();
         StepBean stp1 = new StepBean("Step-1", 1);
@@ -40,7 +38,7 @@ public class CheckoutStepThree extends AppCompatActivity {
         stepsBeanList.add(stp3);
 
 
-        Setpview
+        setpView
                 .setStepViewTexts(stepsBeanList)//总步骤
                 .setTextSize(12)//set textSize
                 .setStepsViewIndicatorCompletedLineColor(ContextCompat.getColor(CheckoutStepThree.this, android.R.color.white))
@@ -57,6 +55,13 @@ public class CheckoutStepThree extends AppCompatActivity {
         pay_txt1 = findViewById(R.id.pay_txt1);
         pay_txt2 = findViewById(R.id.pay_txt2);
         conf_btn = findViewById(R.id.conf_btn);
+
+        conf_btn.setOnClickListener(v -> {
+            // Handle button click event
+            Intent i = new Intent(getApplicationContext(), CheckoutStepFour.class);
+            startActivity(i);
+
+        });
 
     }
 }

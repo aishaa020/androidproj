@@ -1,4 +1,4 @@
-package com.example.project;
+package com.example.project.Adabters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +10,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.project.R;
+import com.example.project.models.ModelCart;
 
 import java.util.List;
 

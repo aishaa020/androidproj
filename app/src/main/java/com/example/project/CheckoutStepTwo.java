@@ -1,11 +1,11 @@
 package com.example.project;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.content.ContextCompat;
 import android.widget.Button;
 
 import com.airbnb.lottie.LottieAnimationView;
@@ -50,7 +50,7 @@ public class CheckoutStepTwo extends AppCompatActivity {
         lottie = findViewById(R.id.lottie);
         btn_con = findViewById(R.id.btn_con);
 
-        lottie.animate().translationX(2000).setDuration(2000).setStartDelay(2900);
+        lottie.animate().translationX(0).setDuration(2000).setStartDelay(2900);
 
         btn_con.setOnClickListener(v -> {
             // Handle button click event
