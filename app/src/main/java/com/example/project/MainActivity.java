@@ -5,8 +5,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.example.project.Adabters.CatagorAdabter;
 import com.example.project.databinding.ActivityMainBinding;
@@ -20,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     Intent intent;
     private ActivityMainBinding binding;
     private ArrayList<Catagory> categories;
+    LottieAnimationView hilottie;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.add(new MeowBottomNavigation.Model(3 , R.drawable.add));
         bottomNavigation.add(new MeowBottomNavigation.Model(4 , R.drawable.cart));
         bottomNavigation.add(new MeowBottomNavigation.Model(5 , R.drawable.profile));
+        initializeUI();
+
+        categoriesSetUp();
         bottomNavigation.setOnClickMenuListener(new Function1<MeowBottomNavigation.Model, Unit>() {
             @Override
             public Unit invoke(MeowBottomNavigation.Model model) {
@@ -74,10 +82,27 @@ public class MainActivity extends AppCompatActivity {
                 return null;
             }
         });
+        hilottie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               hilottie.playAnimation();
+            }
+        });
+
+
+
     }
 
     private void initializeUI() {
         TextView textview3 = findViewById(R.id.textview3);
+//        TextView home = findViewById(R.id.home);
+//        ImageView userimg = findViewById(R.id.userimg);
+
+        hilottie = findViewById(R.id.hilottie);
+        hilottie.animate().translationX(0).setDuration(5000).setStartDelay(0);
+
+//        hilottie.playAnimation();
+
 
     }
 
