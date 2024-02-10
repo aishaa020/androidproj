@@ -13,8 +13,10 @@ import android.widget.TextView;
 import com.airbnb.lottie.LottieAnimationView;
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.example.project.Adabters.CatagorAdabter;
+import com.example.project.Adabters.itemAdapter;
 import com.example.project.databinding.ActivityMainBinding;
 import com.example.project.models.Catagory;
+import com.example.project.models.ItemsModel;
 
 import java.util.ArrayList;
 
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     Intent intent;
     private ActivityMainBinding binding;
     private ArrayList<Catagory> categories;
+    private ArrayList<ItemsModel> items1;
     LottieAnimationView hilottie;
 
     @Override
@@ -41,9 +44,11 @@ public class MainActivity extends AppCompatActivity {
         initializeUI();
 
         categoriesSetUp();
+        itemsSetUp();
         bottomNavigation.setOnClickMenuListener(new Function1<MeowBottomNavigation.Model, Unit>() {
             @Override
             public Unit invoke(MeowBottomNavigation.Model model) {
+
                 switch (model.getId()) {
                     case 1:
                         intent = new Intent(MainActivity.this, MainActivity.class);
@@ -123,6 +128,25 @@ public class MainActivity extends AppCompatActivity {
 
         CatagorAdabter adapter = new CatagorAdabter(this, categories);
         binding.categoryList.setAdapter(adapter);
+    }
+
+    private void itemsSetUp() {// this is for catagories adding
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        binding.itemrec.setLayoutManager(linearLayoutManager);
+
+        items1 = new ArrayList<>();
+        items1.add(new ItemsModel("Sofa", R.drawable.sofa));
+        items1.add(new ItemsModel("Cabinets", R.drawable.cabinet));
+        items1.add(new ItemsModel("Oven",  R.drawable.oven ));
+        items1.add(new ItemsModel("Iron Beds",  R.drawable.ironbed));
+        items1.add(new ItemsModel("Mattresses",  R.drawable.matress));
+        items1.add(new ItemsModel("Fridge", R.drawable.fridgee));
+        items1.add(new ItemsModel("Electrical Devices",  R.drawable.electrical));
+        items1.add(new ItemsModel("Desks",  R.drawable.desk));
+
+
+        itemAdapter adapter = new itemAdapter(this, items1);
+        binding.itemrec.setAdapter(adapter);
     }
 
 
