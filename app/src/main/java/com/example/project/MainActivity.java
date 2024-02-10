@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void itemsSetUp() {// this is for catagories adding
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         binding.itemrec.setLayoutManager(linearLayoutManager);
 
         items1 = new ArrayList<>();

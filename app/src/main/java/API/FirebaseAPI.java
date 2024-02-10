@@ -35,7 +35,7 @@ import java.util.Map;
 import datamodel.User;
 
 public class FirebaseAPI {
-    static String URL = "http://10.0.2.2:5000/";
+    static String URL = "http://192.168.1.2:5000/";
     private RequestQueue queue;
 
     public  FirebaseAPI(Context context) {
@@ -98,7 +98,7 @@ public class FirebaseAPI {
     }
 
     public void login(String email,String password,Context context) throws JSONException {
-        String url = URL + "user";
+
 
 
         try {
@@ -130,7 +130,7 @@ public class FirebaseAPI {
                         @Override
                         public void onErrorResponse(VolleyError error) {
 
-                            Toast.makeText(context, "error occurred", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "hello", Toast.LENGTH_SHORT).show();
                             error.printStackTrace();
                         }
                     }){
