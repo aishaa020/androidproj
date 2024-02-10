@@ -41,7 +41,7 @@ public class CheckoutStepFour extends AppCompatActivity {
 
 
         Setpview
-                .setStepViewTexts(stepsBeanList)//总步骤
+                .setStepViewTexts(stepsBeanList)
                 .setTextSize(12)//set textSize
                 .setStepsViewIndicatorCompletedLineColor(ContextCompat.getColor(CheckoutStepFour.this, android.R.color.white))
                 .setStepsViewIndicatorUnCompletedLineColor(ContextCompat.getColor(CheckoutStepFour.this, R.color.brown))

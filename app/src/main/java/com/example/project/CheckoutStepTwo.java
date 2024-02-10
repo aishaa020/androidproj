@@ -37,8 +37,8 @@ public class CheckoutStepTwo extends AppCompatActivity {
         stepsBeanList.add(stp3);
 
         Setpview
-                .setStepViewTexts(stepsBeanList)//总步骤
-                .setTextSize(12)//set textSize
+                .setStepViewTexts(stepsBeanList)
+                .setTextSize(12)
                 .setStepsViewIndicatorCompletedLineColor(ContextCompat.getColor(CheckoutStepTwo.this, android.R.color.white))
                 .setStepsViewIndicatorUnCompletedLineColor(ContextCompat.getColor(CheckoutStepTwo.this, R.color.brown))
                 .setStepViewComplectedTextColor(ContextCompat.getColor(CheckoutStepTwo.this, android.R.color.white))

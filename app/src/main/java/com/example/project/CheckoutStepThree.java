@@ -39,8 +39,8 @@ public class CheckoutStepThree extends AppCompatActivity {
 
 
         setpView
-                .setStepViewTexts(stepsBeanList)//总步骤
-                .setTextSize(12)//set textSize
+                .setStepViewTexts(stepsBeanList)
+                .setTextSize(12)
                 .setStepsViewIndicatorCompletedLineColor(ContextCompat.getColor(CheckoutStepThree.this, android.R.color.white))
                 .setStepsViewIndicatorUnCompletedLineColor(ContextCompat.getColor(CheckoutStepThree.this, R.color.brown))
                 .setStepViewComplectedTextColor(ContextCompat.getColor(CheckoutStepThree.this, android.R.color.white))
