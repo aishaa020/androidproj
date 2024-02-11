@@ -15,6 +15,7 @@ import com.example.project.models.Model_Product;
 import java.util.List;
 
 public class Products_Adabter extends RecyclerView.Adapter<Products_Adabter.Product_holder>{
+
     List<Model_Product> Products;
 
     @NonNull
