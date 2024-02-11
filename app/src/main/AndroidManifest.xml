@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -17,11 +16,17 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-
+        <activity
+            android:name=".post"
+            android:exported="false" />
+        <activity
+            android:name=".likeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_like"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".UserProfileActivity"
             android:exported="false" />
-
         <activity
             android:name=".signupActivity"
             android:exported="false" />
@@ -51,19 +56,13 @@
             android:exported="false" />
         <activity
             android:name=".CheckoutStepOne"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".CartActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>

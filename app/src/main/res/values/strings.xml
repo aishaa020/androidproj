@@ -32,6 +32,12 @@
     <string name="enter_your_email">Enter your email</string>
     <string name="enter_password">Enter Password</string>
     <string name="sign_up_page">SIGN UP</string>
+    <string name="title_activity_like">likeActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
 
 
 

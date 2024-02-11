@@ -8,17 +8,15 @@ public class Product
     String catagory;
     String price ;
     String quantity;
-    String id;
     String status;
 
-    public Product(int image, String name, String description, String catagory, String price, String quantity, String id, String status) {
+    public Product(int image, String name, String description, String catagory, String price, String quantity,  String status) {
         this.image = image;
         this.name = name;
         this.description = description;
         this.catagory = catagory;
         this.price = price;
         this.quantity = quantity;
-        this.id = id;
         this.status = status;
     }
 
@@ -70,13 +68,6 @@ public class Product
         this.quantity = quantity;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getStatus() {
         return status;

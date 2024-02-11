@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case 3:
-                        intent = new Intent(MainActivity.this, CheckoutStepTwo.class);
+                        intent = new Intent(MainActivity.this, post.class);
                         startActivity(intent);
                         break;
 
