@@ -4,6 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="brown">#B0A695</color>
     <color name="cream">#EBE3D5</color>
+    <color name="profile">#D9CCC1</color>
+    <color name="profile2">#8C503A</color>
+
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#03DAC5</color>
