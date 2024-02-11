@@ -1,6 +1,7 @@
 package com.example.project;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.content.Intent;
@@ -90,7 +91,9 @@ public class MainActivity extends AppCompatActivity {
         hilottie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               hilottie.playAnimation();
+
+
+                hilottie.playAnimation();
             }
         });
 
@@ -100,13 +103,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void initializeUI() {
         TextView textview3 = findViewById(R.id.textview3);
-//        TextView home = findViewById(R.id.home);
-//        ImageView userimg = findViewById(R.id.userimg);
-
         hilottie = findViewById(R.id.hilottie);
-        hilottie.animate().translationX(0).setDuration(5000).setStartDelay(0);
 
-//        hilottie.playAnimation();
+
+        hilottie.animate().translationX(0).setDuration(5000).setStartDelay(0);
 
 
     }
@@ -130,19 +130,22 @@ public class MainActivity extends AppCompatActivity {
         binding.categoryList.setAdapter(adapter);
     }
 
-    private void itemsSetUp() {// this is for catagories adding
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-        binding.itemrec.setLayoutManager(linearLayoutManager);
+    private void itemsSetUp() {// this is for adding items
+        GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
+
+        binding.itemrec.setLayoutManager(layoutManager);
+
 
         items1 = new ArrayList<>();
-        items1.add(new ItemsModel("Sofa", R.drawable.sofa));
-        items1.add(new ItemsModel("Cabinets", R.drawable.cabinet));
-        items1.add(new ItemsModel("Oven",  R.drawable.oven ));
-        items1.add(new ItemsModel("Iron Beds",  R.drawable.ironbed));
-        items1.add(new ItemsModel("Mattresses",  R.drawable.matress));
-        items1.add(new ItemsModel("Fridge", R.drawable.fridgee));
-        items1.add(new ItemsModel("Electrical Devices",  R.drawable.electrical));
-        items1.add(new ItemsModel("Desks",  R.drawable.desk));
+        items1.add(new ItemsModel(R.drawable.sofa, R.drawable.heart, "10","Sofa"));
+        items1.add(new ItemsModel(R.drawable.cabinet, R.drawable.heart, "10", "Cabinets"));
+        items1.add(new ItemsModel(R.drawable.oven, R.drawable.heart, "10", "Oven"));
+        items1.add(new ItemsModel(R.drawable.ironbed, R.drawable.heart, "10", "Iron Beds"));
+        items1.add(new ItemsModel(R.drawable.matress, R.drawable.heart, "10", "Mattresses"));
+        items1.add(new ItemsModel(R.drawable.fridgee, R.drawable.heart, "10", "Fridge"));
+        items1.add(new ItemsModel(R.drawable.electrical, R.drawable.heart, "10", "Electrical Devices"));
+        items1.add(new ItemsModel(R.drawable.desk, R.drawable.heart, "10", "Desks"));
+
 
 
         itemAdapter adapter = new itemAdapter(this, items1);

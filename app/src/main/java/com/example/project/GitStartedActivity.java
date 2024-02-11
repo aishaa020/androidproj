@@ -36,7 +36,7 @@ public class GitStartedActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to MainActivity
-                Intent intent = new Intent(GitStartedActivity.this, choose.class);
+                Intent intent = new Intent(GitStartedActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });

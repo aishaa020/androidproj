@@ -2,6 +2,7 @@ package com.example.project.Adabters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -9,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.airbnb.lottie.LottieAnimationView;
@@ -38,22 +40,47 @@ public class itemAdapter extends RecyclerView.Adapter<itemAdapter.Items_holder> 
 
     @Override
     public void onBindViewHolder(@NonNull Items_holder holder, int position) {
-        holder.binding.itemimg1.setImageResource(items.get(position).getImg());
+        holder.binding.itemimg1.setImageResource(items.get(position).getImg1());
+        holder.binding.itemlove.setImageResource(items.get(position).getImg2());
         holder.binding.txtprice1.setText(items.get(position).getPrice());
-        holder.binding.btnAtc1.setOnClickListener(new View.OnClickListener() {
+        holder.binding.nameItem.setText(items.get(position).getName());
+        holder.binding.addTxt3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //intent
 
             }
         });
-        holder.binding.likelottie1.setOnClickListener(new View.OnClickListener() {
+        holder.binding.addTxt3.setOnHoverListener(new View.OnHoverListener() {
             @Override
-            public void onClick(View v) {
-                //holder.getLikelottie1().playAnimation();
-                //toast
+            public boolean onHover(View v, MotionEvent event) {
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_HOVER_ENTER:
+                        holder.getAdd_txt3().setTextColor(ContextCompat.getColor(context, R.color.white));
+                        break;
+                    case MotionEvent.ACTION_HOVER_EXIT:
+                        holder.getAdd_txt3().setTextColor(ContextCompat.getColor(context, R.color.black));
+                        break;
+                }
+
+                return true;
             }
         });
+
+        holder.binding.itemlove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                holder.itemlove.setImageResource(R.drawable.filledheart);
+            }
+        });
+//        holder.binding.likelottie1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                //holder.getLikelottie1().playAnimation();
+//                //toast
+//            }
+//        });
 
 //        holder.getItemimg1().setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -74,12 +101,12 @@ public class itemAdapter extends RecyclerView.Adapter<itemAdapter.Items_holder> 
 
     public static class Items_holder extends RecyclerView.ViewHolder{
 
-        ImageView itemimg1;
-        TextView txtprice1;
+        ImageView itemimg1, itemlove;
+        TextView txtprice1, name_item;
 
-        Button btn_atc1;
+        TextView add_txt3;
 
-        LottieAnimationView likelottie1;
+
 
 
         ItemRowBinding binding;
@@ -88,8 +115,9 @@ public class itemAdapter extends RecyclerView.Adapter<itemAdapter.Items_holder> 
             binding = ItemRowBinding.bind(itemView);
             itemimg1 = itemView.findViewById(R.id.itemimg1);
             txtprice1 = itemView.findViewById(R.id.txtprice1);
-            btn_atc1 = itemView.findViewById(R.id.btn_atc1);
-            likelottie1 = itemView.findViewById(R.id.likelottie1);
+            add_txt3 = itemView.findViewById(R.id.add_txt3);
+            itemlove = itemView.findViewById(R.id.itemlove);
+            name_item = itemView.findViewById(R.id.name_item);
 
 
         }
@@ -113,20 +141,28 @@ public class itemAdapter extends RecyclerView.Adapter<itemAdapter.Items_holder> 
         }
 
 
-        public Button getBtn_atc1() {
-            return btn_atc1;
+        public TextView getAdd_txt3() {
+            return add_txt3;
         }
 
-        public void setBtn_atc1(Button btn_atc1) {
-            this.btn_atc1 = btn_atc1;
+        public void setAdd_txt3(TextView add_txt3) {
+            this.add_txt3 = add_txt3;
         }
 
-        public LottieAnimationView getLikelottie1() {
-            return likelottie1;
+        public ImageView getItemlove() {
+            return itemlove;
         }
 
-        public void setLikelottie1(LottieAnimationView likelottie1) {
-            this.likelottie1 = likelottie1;
+        public void setItemlove(ImageView itemlove) {
+            this.itemlove = itemlove;
+        }
+
+        public TextView getName_item() {
+            return name_item;
+        }
+
+        public void setName_item(TextView name_item) {
+            this.name_item = name_item;
         }
     }
 

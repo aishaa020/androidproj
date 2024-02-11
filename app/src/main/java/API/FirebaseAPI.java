@@ -35,7 +35,7 @@ import java.util.Map;
 import datamodel.User;
 
 public class FirebaseAPI {
-    static String URL = "http://192.168.1.2:5000/";
+    static String URL = "http://10.0.2.2:5000/";
     private RequestQueue queue;
 
     public  FirebaseAPI(Context context) {
