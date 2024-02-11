@@ -1,11 +1,11 @@
 package com.example.project;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class choose extends AppCompatActivity {
 
@@ -23,7 +23,7 @@ public class choose extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Start the LoginActivity
-                Intent intent = new Intent(choose.this, loginActivity.class);
+                    Intent intent = new Intent(choose.this, loginActivity.class);
                 startActivity(intent);
             }
         });
