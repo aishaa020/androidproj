@@ -42,7 +42,7 @@
                             android:id="@+id/imageView_profile_dp"
                             android:layout_width="160dp"
                             android:layout_height="160dp"
-                            android:contentDescription="@string/user_display_picture"
+                            android:contentDescription="user_display_picture"
                             android:background="@color/white"
                             android:scaleType="centerCrop" />
                     </androidx.cardview.widget.CardView>
@@ -126,7 +126,7 @@
                         android:layout_height="25dp"
                         android:layout_marginTop="20dp"
                         android:id="@+id/ic_email"
-                        android:contentDescription="@string/email"
+                        android:contentDescription="email"
                         android:layout_centerVertical="true"
                         />
 
@@ -162,7 +162,7 @@
                         android:layout_marginTop="20dp"
                         android:layout_centerVertical="true"
                         android:id="@+id/ic_dob"
-                        android:contentDescription="@string/dob"
+                        android:contentDescription="/dob"
                         />
 
                     <TextView
@@ -195,7 +195,7 @@
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:id="@+id/ic_gender"
-                        android:contentDescription="@string/gender"
+                        android:contentDescription="gender"
                         android:layout_centerVertical="true"
                         android:layout_marginTop="20dp"
          />
