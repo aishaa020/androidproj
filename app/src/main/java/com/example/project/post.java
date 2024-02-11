@@ -1,12 +1,8 @@
 package com.example.project;
 
-import static android.widget.Toast.LENGTH_LONG;
-
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,11 +11,13 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class post extends AppCompatActivity {
-
+    private static final int CHOOSE_IMAGE = 101;
     ImageView display_image1;
     EditText Product_name_pv1, quntity1,  Price1, product_status1;
     TextView description1;
@@ -74,34 +72,17 @@ public class post extends AppCompatActivity {
 
                 int position = catagory1.getSelectedItemPosition();
                 boolean b = catagory1.isSelected();
+                display_image1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        getImage();
+                    }
+                });
 
+                if(isInputComplete()){
 
-                if(!b){
-                    Toast.makeText(post.this, "Please Select a Category", Toast.LENGTH_SHORT).show();
                 }else{
-                    if(Product_name_pv1.getText().equals(null)){
-                        Toast.makeText(post.this, "Please Enter a Product Name", Toast.LENGTH_SHORT).show();
-                    }
-                    else{
-                        if(quntity1.getText().equals(null)){
-                            Toast.makeText(post.this, "Please Enter a Quantity", Toast.LENGTH_SHORT).show();
-                        }else{
-                            if(Price1.getText().equals(null)){
-                                Toast.makeText(post.this, "Please Enter a Price", Toast.LENGTH_SHORT).show();
-                            }else{
-                                if(product_status1.getText().equals(null)){
-                                    Toast.makeText(post.this, "Please Enter a Status", Toast.LENGTH_SHORT).show();
-                                }else{
-//                                    if(ImageView){
-//
-//                                    }
-
-
-                                }
-                            }
-                        }
-                    }
-
+                    Toast.makeText(post.this, "Please Select a Category", Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -109,7 +90,41 @@ public class post extends AppCompatActivity {
         });
 
     }
+    private void getImage() {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(Intent.createChooser(intent, "Chose pic 🥰"), CHOOSE_IMAGE);
+    }
+    private boolean  isInputComplete(){
+        if(Product_name_pv1.getText().equals(null)){
+            Toast.makeText(post.this, "Please Enter a Product Name", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
+            if(quntity1.getText().equals(null)){
+                Toast.makeText(post.this, "Please Enter a Quantity", Toast.LENGTH_SHORT).show();
+                return false;
+
+            }
+                if(Price1.getText().equals(null)){
+                    Toast.makeText(post.this, "Please Enter a Price", Toast.LENGTH_SHORT).show();
+                    return false;
+                }
+                    if(product_status1.getText().equals(null)){
+                        Toast.makeText(post.this, "Please Enter a Status", Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
 
 
 
-}
+
+        return true;
+
+
+        }
+
+
+
+
+    }
