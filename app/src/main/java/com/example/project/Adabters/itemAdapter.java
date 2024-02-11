@@ -66,7 +66,6 @@ public class itemAdapter extends RecyclerView.Adapter<itemAdapter.Items_holder> 
                 return true;
             }
         });
-        //helo
 
         holder.binding.itemlove.setOnClickListener(new View.OnClickListener() {
             @Override
