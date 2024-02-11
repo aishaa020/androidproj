@@ -33,6 +33,7 @@ public class Products_Adabter extends RecyclerView.Adapter<Products_Adabter.Prod
     public Product_holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new Products_Adabter.Product_holder(LayoutInflater.from(context).inflate(R.layout.product, parent, false));
     }
+    //hello
 
     @Override
     public void onBindViewHolder(@NonNull Product_holder holder, int position) {
