@@ -13,7 +13,7 @@
         android:layout_marginBottom="5dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        app:cardBackgroundColor="@color/brown"
+        app:cardBackgroundColor="@color/pink2"
         app:cardCornerRadius="20dp"
         app:cardElevation="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -53,6 +53,8 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="1dp"
                 android:layout_marginEnd="205dp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/robotomono"
                 android:text="@string/item_name"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -68,7 +70,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="217dp"
                 android:layout_marginBottom="16dp"
+                android:fontFamily="@font/robotomono"
                 android:text="@string/price"
+                android:textColor="@color/blue"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/likedimgv"
@@ -76,8 +80,8 @@
 
             <LinearLayout
                 android:id="@+id/linlayout1"
-                android:layout_width="190dp"
-                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="33dp"
                 android:layout_marginBottom="17dp"
@@ -94,7 +98,7 @@
                         android:layout_height="match_parent"
                         android:contentDescription="deleting"
                         android:layout_marginStart="100dp"
-                        tools:srcCompat="@drawable/filledheart" />
+                        tools:srcCompat="@drawable/fullheart" />
                 </LinearLayout>
 
 

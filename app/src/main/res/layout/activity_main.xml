@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cream"
     tools:context=".MainActivity">
 
 
@@ -33,25 +34,25 @@
             android:id="@+id/home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="60dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="40dp"
             android:text="HOME"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
+            android:fontFamily="@font/proteststrikeregular"
+            android:textColor="@color/blue"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
         <androidx.cardview.widget.CardView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="85dp"
             app:cardCornerRadius="50dp">
 
             <ImageView
                 android:id="@+id/userimg"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:background="@drawable/circle_img"
                 android:scaleType="centerCrop"
                 android:src="@drawable/bbs" />
@@ -78,12 +79,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="15dp"
                 app:cardCornerRadius="20dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="10dp"
+
+
                     android:scaleType="centerCrop"
                     android:src="@drawable/homepage" />
             </androidx.cardview.widget.CardView>
@@ -92,27 +97,39 @@
                 android:id="@+id/textview3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="15dp"
                 android:text="@string/Catg"
-                android:textColor="@android:color/black"
-                android:textSize="25dp"
+                android:fontFamily="@font/robotomono"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
                 android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/categoryList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="15dp"
                 android:layout_marginBottom="10dp"
-                android:layoutDirection="ltr" />
+                android:layoutDirection="ltr"/>
+            <TextView
+                android:id="@+id/itemstxt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Common Items"
+                android:fontFamily="@font/robotomono"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/itemrec"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:layoutDirection="ltr" />
 
         </LinearLayout>
@@ -126,13 +143,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:mbn_backgroundBottomColor="@color/brown"
-        app:mbn_circleColor="@color/black"
-        app:mbn_countBackgroundColor="#ff6f00"
-        app:mbn_countTextColor="#ffffff"
-        app:mbn_defaultIconColor="#90a4ae"
-        app:mbn_rippleColor="#2f424242"
-        app:mbn_selectedIconColor="#3c415e"
-        app:mbn_shadowColor="#1f212121" />
+        app:mbn_backgroundBottomColor="@color/blue"
+        app:mbn_circleColor="@color/blue"
+        app:mbn_countBackgroundColor="@color/blue"
+        app:mbn_countTextColor="@color/cream"
+        app:mbn_defaultIconColor="@color/pink"
+        app:mbn_rippleColor="@color/pink"
+        app:mbn_selectedIconColor="@color/pink"
+        app:mbn_shadowColor="@color/gray" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

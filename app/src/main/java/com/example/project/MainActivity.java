@@ -137,14 +137,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         items1 = new ArrayList<>();
-        items1.add(new ItemsModel(R.drawable.sofa, R.drawable.heart, "10","Sofa"));
-        items1.add(new ItemsModel(R.drawable.cabinet, R.drawable.heart, "10", "Cabinets"));
-        items1.add(new ItemsModel(R.drawable.oven, R.drawable.heart, "10", "Oven"));
-        items1.add(new ItemsModel(R.drawable.ironbed, R.drawable.heart, "10", "Iron Beds"));
-        items1.add(new ItemsModel(R.drawable.matress, R.drawable.heart, "10", "Mattresses"));
-        items1.add(new ItemsModel(R.drawable.fridgee, R.drawable.heart, "10", "Fridge"));
-        items1.add(new ItemsModel(R.drawable.electrical, R.drawable.heart, "10", "Electrical Devices"));
-        items1.add(new ItemsModel(R.drawable.desk, R.drawable.heart, "10", "Desks"));
+        items1.add(new ItemsModel(R.drawable.sofa, R.drawable.outlineheart, "10","Sofa"));
+        items1.add(new ItemsModel(R.drawable.cabinet, R.drawable.outlineheart, "10", "Cabinets"));
+        items1.add(new ItemsModel(R.drawable.oven, R.drawable.outlineheart, "10", "Oven"));
+        items1.add(new ItemsModel(R.drawable.ironbed, R.drawable.outlineheart, "10", "Iron Beds"));
+        items1.add(new ItemsModel(R.drawable.matress, R.drawable.outlineheart, "10", "Mattresses"));
+        items1.add(new ItemsModel(R.drawable.fridgee, R.drawable.outlineheart, "10", "Fridge"));
+        items1.add(new ItemsModel(R.drawable.electrical, R.drawable.outlineheart, "10", "Electrical Devices"));
+        items1.add(new ItemsModel(R.drawable.desk, R.drawable.outlineheart, "10", "Desks"));
 
 
 

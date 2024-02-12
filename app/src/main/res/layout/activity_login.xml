@@ -86,7 +86,7 @@
     <TextView
         android:id="@+id/forgetPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="230dp"
         android:text="@string/forget_password"
@@ -107,12 +107,13 @@
         android:layout_marginTop="30dp"
         android:layout_marginRight="70dp"
         android:layout_marginLeft="70dp"
+        android:textColor="@color/gray"
         android:background="@drawable/button"
         />
     <TextView
         android:id="@+id/signupLink"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:text="@string/don_t_have_an_account_sign_up"
         android:fontFamily="@font/robotomono"
         android:layout_marginTop="10dp"

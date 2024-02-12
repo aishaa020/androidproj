@@ -79,7 +79,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
-                android:background="@color/profile2">
+                android:background="@color/pink2">
 
                 <RelativeLayout
                     android:layout_width="match_parent"

@@ -4,16 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F3EEEA"
+    android:background="@color/cream"
     tools:context=".GitStartedActivity">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo1"
-        android:adjustViewBounds="true"
-        android:contentDescription="@string/logo" />
 
 
     <TextView
@@ -25,7 +17,7 @@
         android:layout_marginTop="100dp"
         android:textStyle="bold"
         android:textSize="28sp"
-        android:textColor="#7289A6"
+        android:textColor="@color/blue"
         android:layout_gravity="center"
 
         />
@@ -33,24 +25,18 @@
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/there_are_many_new_outfits"
-        android:fontFamily="@font/robotomono"
+        android:layout_height="362dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
-        android:textSize="16sp"
-        android:textColor="#7289A6"
-        android:layout_gravity="center"
-        />
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/that_make_you_cool"
+        android:layout_marginEnd="20dp"
         android:fontFamily="@font/robotomono"
-        android:textSize="16sp"
-        android:textColor="#7289A6"
-        android:layout_gravity="center"
-        />
+        android:gravity="center"
+        android:lineSpacingExtra="20dp"
+        android:text="@string/there_are_many_new_outfits"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
 
 
     <Button
@@ -61,10 +47,11 @@
         android:textSize="20sp"
         android:padding="15dp"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:layout_marginRight="80dp"
         android:layout_marginLeft="80dp"
-        android:background="@drawable/button"        />
+        android:background="@drawable/button"
+        android:textColor="@color/gray"/>
 
 
 </LinearLayout>

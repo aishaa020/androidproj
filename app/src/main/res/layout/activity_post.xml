@@ -6,42 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".Productactivity">
 
+
     <LinearLayout
-        android:id="@+id/firstlayout"
         android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="16dp">
+
 
         <ImageView
             android:id="@+id/display_image1"
             android:layout_width="300dp"
             android:layout_height="200dp"
             android:layout_marginTop="6dp"
-            android:src="@drawable/bbs"
-            />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="396dp"
-        android:layout_height="489dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstlayout">
+            android:layout_marginStart="40dp"
+            android:src="@drawable/bbs" />
 
         <EditText
             android:id="@+id/Product_name_pv1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
             android:layout_marginTop="24dp"
             android:ellipsize="end"
             android:hint="Product_name"
-            android:layout_marginLeft="120dp"
             android:textColor="@color/black"
             android:textSize="30sp" />
 
@@ -52,17 +41,17 @@
             android:layout_marginTop="10dp"
 
             android:drawablePadding="4dp"
+            android:text="Simple Description"
             android:textColor="@color/black"
-            android:textSize="14sp"
-            android:text="Simple Description"/>
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/quntity1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
             android:layout_marginTop="2dp"
             android:drawablePadding="4dp"
-            android:layout_marginLeft="120dp"
             android:hint="Product_quantity"
             android:textColor="@color/black"
             android:textSize="26sp" />
@@ -71,9 +60,9 @@
             android:id="@+id/Price1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
             android:layout_marginTop="2dp"
             android:drawablePadding="4dp"
-            android:layout_marginLeft="120dp"
             android:hint="Product_price"
             android:textColor="@color/black"
             android:textSize="26sp" />
@@ -82,9 +71,9 @@
             android:id="@+id/product_status1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
             android:layout_marginTop="2dp"
             android:drawablePadding="4dp"
-            android:layout_marginLeft="120dp"
             android:hint="Product_Status"
             android:textColor="@color/black"
             android:textSize="26sp" />
@@ -102,8 +91,9 @@
             android:id="@+id/postt1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add"/>
+            android:text="Add" />
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
