@@ -38,7 +38,6 @@ public class post extends AppCompatActivity {
     Button postt1;
     Uri uriImg;
     Product product =new Product();
-    LinearLayout le;
     FirebaseAPI firebaseAPI;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +52,6 @@ public class post extends AppCompatActivity {
         description1 = findViewById(R.id.description1);
         catagory1 = findViewById(R.id.catagory1);
         postt1 = findViewById(R.id.postt1);
-        le = findViewById(R.id.firstlayout);
         // Define values and corresponding names
         List<String> values = new ArrayList<>();
         values.add("Select");

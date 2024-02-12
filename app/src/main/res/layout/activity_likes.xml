@@ -6,27 +6,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FBFAFA">
 
+    <TextView
+        android:id="@+id/liked"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:fontFamily="@font/proteststrikeregular"
+        android:text="LIKED ITEMS"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/item_recycler"
         android:layout_width="411dp"
         android:layout_height="652dp"
+        android:layout_marginTop="79dp"
         android:scrollbars="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="79dp"
+        app:layout_constraintTop_toTopOf="@+id/liked"
         tools:ignore="MissingConstraints" />
-    <TextView
-        android:id="@+id/add_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#5ABAB0"
-        android:gravity="center"
-        android:padding="10dp"
-        android:text="Liked Items "
-        android:textColor="@color/black"
-        android:textColorHighlight="#1C94A3"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

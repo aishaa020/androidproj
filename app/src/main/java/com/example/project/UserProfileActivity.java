@@ -28,8 +28,8 @@ import datamodel.User;
 
 public class UserProfileActivity extends AppCompatActivity {
 
-    ImageView imageView;
-    TextView nameTextView, dateTextView, locationTextView, emailTextView;
+    ImageView imageView_profile_dp;
+    TextView textView_show_welcome, textView_show_full_name, textView_show_email, textView_show_dob, textView_show_gender ;
     Button selectImageButton;
     private static final int PICK_IMAGE_REQUEST = 1;
     Bitmap bitmap;
@@ -40,14 +40,15 @@ public class UserProfileActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             ID = extras.getString("id");
-            setContentView(R.layout.test_profile);
+            setContentView(R.layout.activity_user_profile);
 
             // Initialize views
-            imageView = findViewById(R.id.imageView);
-            nameTextView = findViewById(R.id.name);
-            dateTextView = findViewById(R.id.date);
-            locationTextView = findViewById(R.id.location);
-            emailTextView = findViewById(R.id.email);
+            imageView_profile_dp = findViewById(R.id.imageView_profile_dp);
+            textView_show_welcome = findViewById(R.id.textView_show_welcome);
+            textView_show_full_name = findViewById(R.id.textView_show_full_name);
+            textView_show_email = findViewById(R.id.textView_show_email);
+            textView_show_dob = findViewById(R.id.textView_show_dob);
+            textView_show_gender = findViewById(R.id.textView_show_gender);
             selectImageButton = findViewById(R.id.selectImageButton);
 
             // Set click listener for select image button
@@ -85,7 +86,7 @@ public class UserProfileActivity extends AppCompatActivity {
             // Set the image to the image view
             try {
                 bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(data.getData()));
-                imageView.setImageBitmap(bitmap);
+                imageView_profile_dp.setImageBitmap(bitmap);
             } catch (Exception e) {
                 e.printStackTrace();
             }

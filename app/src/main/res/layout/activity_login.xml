@@ -110,6 +110,7 @@
         android:textColor="@color/gray"
         android:background="@drawable/button"
         />
+
     <TextView
         android:id="@+id/signupLink"
         android:layout_width="wrap_content"

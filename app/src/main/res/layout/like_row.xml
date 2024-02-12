@@ -80,9 +80,9 @@
 
             <LinearLayout
                 android:id="@+id/linlayout1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="33dp"
                 android:layout_marginBottom="17dp"
                 android:orientation="horizontal"
@@ -92,14 +92,26 @@
 
 
 
-                    <ImageView
-                        android:id="@+id/itemdel1"
-                        android:layout_width="45dp"
-                        android:layout_height="match_parent"
-                        android:contentDescription="deleting"
-                        android:layout_marginStart="100dp"
-                        tools:srcCompat="@drawable/fullheart" />
-                </LinearLayout>
+                <Button
+                    android:id="@+id/btnaddbtn"
+                    android:layout_width="70dp"
+                    android:layout_height="48dp"
+                    android:textColor="@color/gray"
+                    android:backgroundTint="@color/pink3"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/robotomono"
+                    android:text="Add To Cart">
+
+                </Button>
+
+                <ImageView
+                    android:id="@+id/itemdel1"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:contentDescription="deleting"
+                    tools:srcCompat="@drawable/fullheart" />
+            </LinearLayout>
 
 
 

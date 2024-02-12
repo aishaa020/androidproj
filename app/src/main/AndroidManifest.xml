@@ -20,10 +20,8 @@
             android:name=".post"
             android:exported="false" />
         <activity
-            android:name=".likeActivity"
-            android:exported="false"
-            android:label="@string/title_activity_like"
-            android:theme="@style/AppTheme" />
+            android:name=".likes"
+            android:exported="false" />
         <activity
             android:name=".UserProfileActivity"
             android:exported="false" />

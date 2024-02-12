@@ -71,7 +71,7 @@ public class itemAdapter extends RecyclerView.Adapter<itemAdapter.Items_holder> 
             @Override
             public void onClick(View v) {
 
-                holder.itemlove.setImageResource(R.drawable.filledheart);
+                holder.itemlove.setImageResource(R.drawable.fullheart);
             }
         });
 //        holder.binding.likelottie1.setOnClickListener(new View.OnClickListener() {

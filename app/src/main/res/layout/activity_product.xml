@@ -4,124 +4,149 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cream"
     tools:context=".Productactivity">
 
+
     <LinearLayout
-        android:id="@+id/firstlayout"
         android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/display_image"
-            android:layout_width="300dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="6dp"
-            android:src="@drawable/bbs" />
-        <Button
-            android:id="@+id/love_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="love"
-
-
-            />    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="396dp"
-        android:layout_height="489dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstlayout">
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="16dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv4"
+            android:layout_width="200dp"
+            android:layout_height="190dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:id="@+id/display_image2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bbs" />
+
+        </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/Product_name_pv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/Product_name_pv2"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
             android:layout_marginTop="24dp"
+            android:layout_marginStart="60dp"
             android:ellipsize="end"
-            android:text="Product name"
-            android:layout_marginLeft="120dp"
-            android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:hint="Product name"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/robotomono"
+            android:background="@drawable/editext"
+            android:padding="15dp"
+            android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/description"
+            android:id="@+id/description2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-
+            android:layout_marginStart="60dp"
             android:drawablePadding="4dp"
-            android:textColor="@color/black"
-            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
             android:text="Simple Description"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/robotomono"
+            android:textSize="14sp" />
 
-            />
+        <TextView
+            android:id="@+id/quntity2"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="2dp"
+            android:drawablePadding="4dp"
+            android:hint="Product quantity"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/robotomono"
+            android:background="@drawable/editext"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/quntity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/Price2"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
             android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
             android:drawablePadding="4dp"
-            android:layout_marginLeft="120dp"
-            android:text="100"
-            android:textColor="@color/black"
-            android:textSize="26sp" />
-        <TextView
-            android:id="@+id/catagory"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:drawablePadding="4dp"
-            android:layout_marginLeft="120dp"
-            android:text="Furniter"
-            android:textColor="@color/black"
-            android:textSize="26sp" />
-        <TextView
-            android:id="@+id/Price"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:drawablePadding="4dp"
-            android:layout_marginLeft="120dp"
-            android:text="Price"
-            android:textColor="@color/black"
-            android:textSize="26sp" />
-        <TextView
-            android:id="@+id/product_id"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:drawablePadding="4dp"
-            android:layout_marginLeft="120dp"
-            android:text="ID"
-            android:textColor="@color/black"
-            android:textSize="26sp" />
-        <TextView
-            android:id="@+id/product_status"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:drawablePadding="4dp"
-            android:layout_marginLeft="120dp"
-            android:text="Status"
-            android:textColor="@color/black"
-            android:textSize="26sp" />
+            android:layout_marginStart="60dp"
+            android:hint="Product price"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/robotomono"
+            android:background="@drawable/editext"
+            android:padding="15dp"
+            android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/cart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cart"
+        <TextView
+            android:id="@+id/product_status2"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="60dp"
+            android:drawablePadding="4dp"
+            android:hint="Product Status"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/robotomono"
+            android:background="@drawable/editext"
+            android:padding="15dp"
+            android:textSize="20sp"/>
 
-            />
+        <TextView
+            android:id="@+id/product_cat2"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="60dp"
+            android:drawablePadding="4dp"
+            android:hint="Product Category"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/robotomono"
+            android:background="@drawable/editext"
+            android:padding="15dp"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/postt2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="20dp"
+                android:text="Add"
+                android:background="@drawable/button"
+                android:fontFamily="@font/robotomono"/>
+            <ImageView
+                android:id="@+id/imgloved"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/outlineheart">
+
+            </ImageView>
+        </LinearLayout>
+
+
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -39,6 +40,12 @@ public class likedAdapter extends RecyclerView.Adapter<likedAdapter.Liked_holder
         holder.getLikedname().setText(likes.get(position).getName());
         holder.getLikedprice().setText(likes.get(position).getPrice());
         holder.getItemdel1().setImageResource(likes.get(position).getImg2());
+        holder.getBtnaddbtn().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //add to cart
+            }
+        });
 
     }
 
@@ -51,6 +58,8 @@ public class likedAdapter extends RecyclerView.Adapter<likedAdapter.Liked_holder
         ImageView likedimgv, itemdel1;
         TextView likedname, likedprice;
 
+        Button btnaddbtn;
+
 
         public Liked_holder (@NonNull View itemView) {
             super(itemView);
@@ -58,6 +67,7 @@ public class likedAdapter extends RecyclerView.Adapter<likedAdapter.Liked_holder
             itemdel1 = itemView.findViewById(R.id.itemdel1);
             likedname = itemView.findViewById(R.id.likedname);
             likedprice = itemView.findViewById(R.id.likedprice);
+            btnaddbtn = itemView.findViewById(R.id.btnaddbtn);
         }
 
         public ImageView getLikedimgv() {
@@ -92,6 +102,12 @@ public class likedAdapter extends RecyclerView.Adapter<likedAdapter.Liked_holder
             this.likedprice = likedprice;
         }
 
+        public Button getBtnaddbtn() {
+            return btnaddbtn;
+        }
 
+        public void setBtnaddbtn(Button btnaddbtn) {
+            this.btnaddbtn = btnaddbtn;
+        }
     }
 }

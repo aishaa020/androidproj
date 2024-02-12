@@ -18,7 +18,7 @@ import com.example.project.models.Model_Product;
 
 import java.util.List;
 
-public class Products_Adabter extends RecyclerView.Adapter<Products_Adabter.Product_holder>{
+public class Products_Adabter extends RecyclerView.Adapter<Products_Adabter.Product_holder> {
 
     Context context;
     List<Model_Product> Products;
@@ -37,17 +37,17 @@ public class Products_Adabter extends RecyclerView.Adapter<Products_Adabter.Prod
 
     @Override
     public void onBindViewHolder(@NonNull Product_holder holder, int position) {
-        holder.binding.productImage.setImageResource(Products.get(position).getImage());
-        holder.binding.productName.setText(Products.get(position).getName());
-        holder.binding.productPrice.setText(Products.get(position).getPrice());
-        holder.binding.addBtn.setOnClickListener(new View.OnClickListener() {
+        holder.binding.likedimgvi.setImageResource(Products.get(position).getImage());
+        holder.binding.likeditemname.setText(Products.get(position).getName());
+        holder.binding.likeditemprice.setText(Products.get(position).getPrice());
+        holder.binding.btnaddbtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
             }
         });
 
-        holder.binding.love.setOnClickListener(new View.OnClickListener() {
+        holder.binding.itemdel4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -62,63 +62,70 @@ public class Products_Adabter extends RecyclerView.Adapter<Products_Adabter.Prod
 
     public static class Product_holder extends RecyclerView.ViewHolder {
 
-        ImageView imageView;
-        TextView nameView;
-        TextView priceView;
-        Button addView;
-        Button loveView;
+        ImageView likedimgvi, itemdel4;
+        TextView likeditemname;
+        TextView likeditemprice;
+        Button btnaddbtn1;
+
 
         ProductBinding binding;
 
-        public Product_holder (@NonNull View itemView) {
+        public Product_holder(@NonNull View itemView) {
             super(itemView);
             binding = ProductBinding.bind(itemView);
-            imageView = itemView.findViewById(R.id.product_image);
-            nameView = itemView.findViewById(R.id.product_name);
-            priceView = itemView.findViewById(R.id.product_price);
-            addView = itemView.findViewById(R.id.add_btn);
-            loveView = itemView.findViewById(R.id.love);
+            likedimgvi = itemView.findViewById(R.id.likedimgvi);
+            itemdel4 = itemView.findViewById(R.id.itemdel4);
+            likeditemname = itemView.findViewById(R.id.likeditemname);
+            likeditemprice = itemView.findViewById(R.id.likeditemprice);
+            btnaddbtn1 = itemView.findViewById(R.id.btnaddbtn1);
         }
 
-        public ImageView getImageView() {
-            return imageView;
+        public ImageView getLikedimgvi() {
+            return likedimgvi;
         }
 
-        public void setImageView(ImageView imageView) {
-            this.imageView = imageView;
+        public void setLikedimgvi(ImageView likedimgvi) {
+            this.likedimgvi = likedimgvi;
         }
 
-        public TextView getNameView() {
-            return nameView;
+        public ImageView getItemdel4() {
+            return itemdel4;
         }
 
-
-        public void setNameView(TextView nameView) {
-            this.nameView = nameView;
+        public void setItemdel4(ImageView itemdel4) {
+            this.itemdel4 = itemdel4;
         }
 
-        public TextView getPriceView() {
-            return priceView;
+        public TextView getLikeditemname() {
+            return likeditemname;
         }
 
-        public void setPriceView(TextView priceView) {
-            this.priceView = priceView;
+        public void setLikeditemname(TextView likeditemname) {
+            this.likeditemname = likeditemname;
         }
 
-        public Button getAddView() {
-            return addView;
+        public TextView getLikeditemprice() {
+            return likeditemprice;
         }
 
-        public void setAddView(Button addView) {
-            this.addView = addView;
+        public void setLikeditemprice(TextView likeditemprice) {
+            this.likeditemprice = likeditemprice;
         }
 
-        public Button getLoveView() {
-            return loveView;
+        public Button getBtnaddbtn1() {
+            return btnaddbtn1;
         }
 
-        public void setLoveView(Button loveView) {
-            this.loveView = loveView;
+        public void setBtnaddbtn1(Button btnaddbtn1) {
+            this.btnaddbtn1 = btnaddbtn1;
+        }
+
+        public ProductBinding getBinding() {
+            return binding;
+        }
+
+        public void setBinding(ProductBinding binding) {
+            this.binding = binding;
         }
     }
 }
