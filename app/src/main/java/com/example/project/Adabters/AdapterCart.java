@@ -33,9 +33,7 @@ public class AdapterCart extends RecyclerView.Adapter<AdapterCart.ViewHolder>{
     @NonNull
     @Override
     public AdapterCart.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.cart_row, parent, false );
-        return new AdapterCart.ViewHolder(view);
+        return new AdapterCart.ViewHolder(LayoutInflater.from(context).inflate(R.layout.cart_row, parent, false));
     }
 
     @Override
@@ -100,6 +98,76 @@ public class AdapterCart extends RecyclerView.Adapter<AdapterCart.ViewHolder>{
 
         }
 
+        public ImageView getCartimage() {
+            return cartimage;
+        }
 
+        public void setCartimage(ImageView cartimage) {
+            this.cartimage = cartimage;
+        }
+
+        public ImageView getAdditem() {
+            return additem;
+        }
+
+        public void setAdditem(ImageView additem) {
+            this.additem = additem;
+        }
+
+        public ImageView getRemoveitem() {
+            return removeitem;
+        }
+
+        public void setRemoveitem(ImageView removeitem) {
+            this.removeitem = removeitem;
+        }
+
+        public ImageView getDeleteitem() {
+            return deleteitem;
+        }
+
+        public void setDeleteitem(ImageView deleteitem) {
+            this.deleteitem = deleteitem;
+        }
+
+        public TextView getCartname() {
+            return cartname;
+        }
+
+        public void setCartname(TextView cartname) {
+            this.cartname = cartname;
+        }
+
+        public TextView getCartprice() {
+            return cartprice;
+        }
+
+        public void setCartprice(TextView cartprice) {
+            this.cartprice = cartprice;
+        }
+
+        public EditText getQunatitytxt() {
+            return qunatitytxt;
+        }
+
+        public void setQunatitytxt(EditText qunatitytxt) {
+            this.qunatitytxt = qunatitytxt;
+        }
+
+        public Button getCheck1btn() {
+            return check1btn;
+        }
+
+        public void setCheck1btn(Button check1btn) {
+            this.check1btn = check1btn;
+        }
+
+        public CartRowBinding getBinding() {
+            return binding;
+        }
+
+        public void setBinding(CartRowBinding binding) {
+            this.binding = binding;
+        }
     }
 }
