@@ -38,14 +38,14 @@ public class Productsactivity extends AppCompatActivity {
         binding.itemRecycler.setLayoutManager(linearLayoutManager);
 
         product = new ArrayList<>();
-        product.add(new Model_Product(R.drawable.sofa, "Sofa", "100"));
-        product.add(new Model_Product(R.drawable.cabinet,"Sofa", "100" ));
-        product.add(new Model_Product(R.drawable.oven, "Sofa", "100" ));
-        product.add(new Model_Product( R.drawable.ironbed, "Sofa", "100"));
-        product.add(new Model_Product(R.drawable.matress, "Sofa", "100"));
-        product.add(new Model_Product(R.drawable.fridgee, "Sofa", "100"));
-        product.add(new Model_Product(R.drawable.electrical, "Sofa", "100"));
-        product.add(new Model_Product(R.drawable.desk, "Sofa", "100"));
+        product.add(new Model_Product(R.drawable.sofa1, "Sofa", "100"));
+        product.add(new Model_Product(R.drawable.sofa1,"Sofa", "100" ));
+        product.add(new Model_Product(R.drawable.sofa1, "Sofa", "100" ));
+        product.add(new Model_Product( R.drawable.sofa1, "Sofa", "100"));
+        product.add(new Model_Product(R.drawable.sofa1, "Sofa", "100"));
+        product.add(new Model_Product(R.drawable.sofa1, "Sofa", "100"));
+        product.add(new Model_Product(R.drawable.sofa1, "Sofa", "100"));
+        product.add(new Model_Product(R.drawable.sofa1, "Sofa", "100"));
 
 
         Products_Adabter adapter = new Products_Adabter(this, product);
