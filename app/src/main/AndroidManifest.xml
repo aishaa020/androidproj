@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -19,11 +21,7 @@
         <activity
             android:name=".post"
             android:exported="false" />
-        <activity
-            android:name=".likeActivity"
-            android:exported="false"
-            android:label="@string/title_activity_like"
-            android:theme="@style/AppTheme" />
+
         <activity
             android:name=".UserProfileActivity"
             android:exported="false" />

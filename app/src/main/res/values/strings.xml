@@ -32,8 +32,11 @@
     <string name="enter_your_email">Enter your email</string>
     <string name="enter_password">Enter Password</string>
     <string name="sign_up_page">SIGN UP</string>
-    <string name="loading" >loading</string>
-
+    <string name="dop">date of birth</string>
+    <string name="loading">loading</string>
+    <string name="gender">gender</string>
+    <string name="dob">dob</string>
+    <string name="email">email</string>
 
 
 </resources>
