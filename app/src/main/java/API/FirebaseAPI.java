@@ -226,6 +226,7 @@ public class FirebaseAPI {
 
 
     }
+
     public void uploadImg(Context context, Uri uriImg) {
         StorageReference imgRef = FirebaseStorage.getInstance().getReference("itemPic/" + System.currentTimeMillis() + ".jpg");
         imgRef.putFile(uriImg).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {

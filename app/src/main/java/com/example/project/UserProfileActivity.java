@@ -52,6 +52,7 @@ public class UserProfileActivity extends AppCompatActivity {
             selectImageButton = findViewById(R.id.selectImageButton);
 
             // Set click listener for select image button
+
             selectImageButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
