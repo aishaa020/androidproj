@@ -175,11 +175,11 @@ public class FirebaseAPI {
                     new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
-                            ImageView imageView = (ImageView) ((Activity) context).findViewById(R.id.imageView);
-                            TextView nameTextView = (TextView) ((Activity) context).findViewById(R.id.name);
-                            TextView dateTextView = (TextView) ((Activity) context).findViewById(R.id.date);
-                            TextView locationTextView = (TextView) ((Activity) context).findViewById(R.id.location);
-                            TextView emailTextView = (TextView) ((Activity) context).findViewById(R.id.email);
+                            ImageView imageView = (ImageView) ((Activity) context).findViewById(R.id.imageView_profile_dp);
+                            TextView nameTextView = (TextView) ((Activity) context).findViewById(R.id.textView_show_full_name);
+                            TextView dateTextView = (TextView) ((Activity) context).findViewById(R.id.textView_show_dob);
+                            TextView locationTextView = (TextView) ((Activity) context).findViewById(R.id.textView_show_gender);
+                            TextView emailTextView = (TextView) ((Activity) context).findViewById(R.id.textView_show_email);
                             Button selectImageButton = (Button) ((Activity) context).findViewById(R.id.selectImageButton);
 
                             try {
