@@ -31,7 +31,7 @@ public class CartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityCartBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        getSupportActionBar().hide();
+
 
         carts = findViewById(R.id.carts);
         check1btn = findViewById(R.id.check1btn);

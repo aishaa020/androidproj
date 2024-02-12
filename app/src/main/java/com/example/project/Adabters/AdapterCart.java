@@ -99,5 +99,7 @@ public class AdapterCart extends RecyclerView.Adapter<AdapterCart.ViewHolder>{
             check1btn = itemView.findViewById(R.id.check1btn);
 
         }
+
+
     }
 }

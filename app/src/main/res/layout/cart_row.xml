@@ -93,7 +93,7 @@
 
                     <Button
                         android:id="@+id/decrement"
-                        android:layout_width="38dp"
+                        android:layout_width="48dp"
                         android:layout_height="match_parent"
                         android:background="@null"
                         android:backgroundTint="@color/cream"
@@ -105,7 +105,7 @@
                     <TextView
                         android:id="@+id/display"
 
-                        android:layout_width="50dp"
+                        android:layout_width="40dp"
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:inputType="number"
@@ -114,7 +114,7 @@
 
                     <Button
                         android:id="@+id/increment"
-                        android:layout_width="40dp"
+                        android:layout_width="48dp"
                         android:layout_height="match_parent"
                         android:background="@null"
                         android:backgroundTint="@color/cream"
@@ -130,9 +130,9 @@
                     android:id="@+id/itemdel"
                     android:layout_width="45dp"
                     android:layout_height="match_parent"
-
-                    tools:srcCompat="@drawable/baseline_delete_24"
-                    android:contentDescription="deleting"/>
+                    android:layout_marginStart="15dp"
+                    android:contentDescription="deleting"
+                    tools:srcCompat="@drawable/baseline_delete_24" />
 
             </LinearLayout>
 
