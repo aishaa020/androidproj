@@ -175,7 +175,6 @@ public class FirebaseAPI {
                     new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
-                            ImageView imageView = (ImageView) ((Activity) context).findViewById(R.id.imageView_profile_dp);
                             TextView nameTextView = (TextView) ((Activity) context).findViewById(R.id.textView_show_full_name);
                             TextView dateTextView = (TextView) ((Activity) context).findViewById(R.id.textView_show_dob);
                             TextView locationTextView = (TextView) ((Activity) context).findViewById(R.id.textView_show_gender);
