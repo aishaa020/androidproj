@@ -2,16 +2,18 @@ package com.example.project.models;
 
 public class Product
 {
-    int image ;
+    String imageurl ;
     String name;
     String description;
     String catagory;
     String price ;
     String quantity;
     String status;
+    public Product() {
 
-    public Product(int image, String name, String description, String catagory, String price, String quantity,  String status) {
-        this.image = image;
+    }
+    public Product(String imageurl, String name, String description, String catagory, String price, String quantity,  String status) {
+        this.imageurl = imageurl;
         this.name = name;
         this.description = description;
         this.catagory = catagory;
@@ -20,12 +22,12 @@ public class Product
         this.status = status;
     }
 
-    public int getImage() {
-        return image;
+    public String getImage() {
+        return imageurl;
     }
 
-    public void setImage(int image) {
-        this.image = image;
+    public void setImage(String imageurl) {
+        this.imageurl = imageurl;
     }
 
     public String getName() {
