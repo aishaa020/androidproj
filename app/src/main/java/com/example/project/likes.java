@@ -38,14 +38,9 @@ public class likes extends AppCompatActivity {
         binding.itemRecycler.setLayoutManager(linearLayoutManager);
 
         likes = new ArrayList<>();
-        likes.add(new likedModel(R.drawable.sofa, R.drawable.fullheart, "Sofa", "100"));
-        likes.add(new likedModel(R.drawable.sofa, R.drawable.fullheart, "Sofa", "100"));
-        likes.add(new likedModel(R.drawable.sofa, R.drawable.fullheart, "Sofa", "100"));
-        likes.add(new likedModel(R.drawable.sofa, R.drawable.fullheart, "Sofa", "100"));
-        likes.add(new likedModel(R.drawable.sofa, R.drawable.fullheart, "Sofa", "100"));
-        likes.add(new likedModel(R.drawable.sofa, R.drawable.fullheart, "Sofa", "100"));
-        likes.add(new likedModel(R.drawable.sofa, R.drawable.fullheart, "Sofa", "100"));
-        likes.add(new likedModel(R.drawable.sofa, R.drawable.fullheart, "Sofa", "100"));
+        likes.add(new likedModel(R.drawable.sofa1, R.drawable.fullheart, "Sofa", "100"));
+        likes.add(new likedModel(R.drawable.cabinet1, R.drawable.fullheart, "cabinet", "100"));
+
 
 
         likedAdapter adapter = new likedAdapter(this, likes);

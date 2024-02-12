@@ -46,14 +46,10 @@ public class CartActivity extends AppCompatActivity {
         binding.cartView.setLayoutManager(linearLayoutManager);
 
         cart = new ArrayList<>();
-        cart.add(new ModelCart("Sectional Sofa", "200", R.drawable.sofa, 1));
-        cart.add(new ModelCart("Chesterfield Sofa", "200", R.drawable.sofa, 2));
-        cart.add(new ModelCart("Lawson Sofa",  "200", R.drawable.sofa, 1));
-        cart.add(new ModelCart("Camelback Sofa","200", R.drawable.sofa, 3));
-        cart.add(new ModelCart("Sleeper Sofa",  "200", R.drawable.sofa, 2));
-        cart.add(new ModelCart("Recliner Sofa", "200", R.drawable.sofa, 1));
-        cart.add(new ModelCart("Chaise Lounge",  "200", R.drawable.sofa, 1));
-        cart.add(new ModelCart("Futon", "200", R.drawable.sofa, 1));
+        cart.add(new ModelCart("Sectional Sofa", "200", R.drawable.sofa1, 1));
+        cart.add(new ModelCart("Chesterfield cabinet", "200", R.drawable.cabinet1, 2));
+        cart.add(new ModelCart("Lawson Sofa",  "200", R.drawable.sofa1, 1));
+
 
 
         AdapterCart adapter = new AdapterCart(this, cart);

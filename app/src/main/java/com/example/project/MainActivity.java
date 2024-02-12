@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case 2:
-                        intent = new Intent(MainActivity.this, CheckoutStepOne.class);
+                        intent = new Intent(MainActivity.this, likes.class);
                         startActivity(intent);
                         break;
 
@@ -65,12 +65,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case 4:
-                        intent = new Intent(MainActivity.this, CheckoutStepFour.class);
+                        intent = new Intent(MainActivity.this, CartActivity.class);
                         startActivity(intent);
                         break;
 
                     case 5:
-                        Intent intent = new Intent(MainActivity.this, CheckoutStepThree.class);
+                        Intent intent = new Intent(MainActivity.this, UserProfileActivity.class);
                         startActivity(intent);
                         break;
                 }
